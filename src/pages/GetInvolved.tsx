@@ -2,6 +2,7 @@
 import Navbar from '@/components/Navbar';
 import VolunteerForm from '@/components/VolunteerForm';
 import NGOPartners from '@/components/NGOPartners';
+import Footer from '@/components/Footer';
 
 const GetInvolved = () => {
   return (
@@ -11,6 +12,7 @@ const GetInvolved = () => {
         <VolunteerForm />
         <NGOPartners />
       </div>
+      <Footer />
     </div>
   );
 };
