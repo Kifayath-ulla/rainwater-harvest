@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Users, Heart, MapPin, Sparkles, Target, Zap } from 'lucide-react';
+import { Users, Heart, MapPin, Sparkles, Target, Zap, GraduationCap } from 'lucide-react';
 
 const VolunteerForm = () => {
   const [isHovered, setIsHovered] = useState<number | null>(null);
@@ -19,14 +19,24 @@ const VolunteerForm = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <div className="inline-block p-3 bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl mb-6 animate-bounce">
-            <Sparkles className="w-8 h-8 text-white" />
+            <GraduationCap className="w-8 h-8 text-white" />
           </div>
           <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-green-600 via-blue-600 to-teal-600 bg-clip-text text-transparent mb-6">
             Join the Water Revolution
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Be the change Bangalore needs. Transform communities, save water, and create a sustainable future together.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+            This is a personal initiative by an engineering student to raise awareness about rainwater harvesting in Bangalore. 
+            Together, we can make a difference in our city's water future.
           </p>
+          <div className="bg-white/80 backdrop-blur-lg rounded-2xl p-6 max-w-2xl mx-auto border border-gray-200 shadow-lg">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <GraduationCap className="w-6 h-6 text-blue-600" />
+              <span className="text-lg font-semibold text-gray-800">Student Initiative</span>
+            </div>
+            <p className="text-gray-600">
+              Created by Nasir Azam, Engineering Student at <span className="font-semibold text-blue-600">Nitte Meenakshi Institute of Technology</span>
+            </p>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
@@ -35,7 +45,7 @@ const VolunteerForm = () => {
               <CardHeader className="bg-gradient-to-r from-green-600 to-blue-600 text-white rounded-t-xl">
                 <CardTitle className="flex items-center gap-3 text-2xl">
                   <Heart className="w-7 h-7 animate-pulse" />
-                  Start Your Impact Journey
+                  Connect & Collaborate
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-8 space-y-6">
@@ -84,15 +94,16 @@ const VolunteerForm = () => {
                   <option>📝 Content Creation</option>
                   <option>📊 Data Collection</option>
                   <option>🎨 Design & Media</option>
+                  <option>🎓 Student Collaboration</option>
                 </select>
                 <textarea
-                  placeholder="Tell us about your passion for water conservation..."
+                  placeholder="Share your ideas or how you'd like to help spread awareness about rainwater harvesting..."
                   rows={4}
                   className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-pink-500 focus:ring-4 focus:ring-pink-100 transition-all duration-300 resize-none"
                 />
                 <Button className="w-full bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                   <Zap className="w-5 h-5 mr-2" />
-                  Join the Movement
+                  Let's Collaborate
                 </Button>
               </CardContent>
             </Card>
@@ -102,22 +113,22 @@ const VolunteerForm = () => {
             {[
               {
                 icon: Users,
-                title: "Community Impact",
-                description: "Lead neighborhood workshops and create awareness campaigns that inspire thousands of families to adopt sustainable water practices.",
+                title: "Student Network",
+                description: "Connect with fellow students and young professionals who are passionate about environmental conservation and water sustainability.",
                 color: "from-blue-500 to-cyan-500",
                 delay: "0s"
               },
               {
                 icon: Target,
-                title: "Strategic Initiatives",
-                description: "Help develop and implement large-scale rainwater harvesting projects across Bangalore's residential and commercial areas.",
+                title: "Awareness Campaigns",
+                description: "Help create and spread educational content about rainwater harvesting through social media, blogs, and community presentations.",
                 color: "from-green-500 to-emerald-500",
                 delay: "0.2s"
               },
               {
                 icon: Sparkles,
-                title: "Innovation Lab",
-                description: "Collaborate on cutting-edge solutions, research new technologies, and document success stories that inspire policy changes.",
+                title: "Research & Innovation",
+                description: "Contribute to research projects, case studies, and innovative solutions for making rainwater harvesting more accessible in Bangalore.",
                 color: "from-purple-500 to-pink-500",
                 delay: "0.4s"
               }

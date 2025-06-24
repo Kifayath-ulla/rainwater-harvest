@@ -1,26 +1,33 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Mail, GraduationCap, MessageCircle, Clock } from 'lucide-react';
 
 const ContactInfo = () => {
   return (
     <div className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12">
-          <div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">About This Initiative</h3>
+            <p className="text-lg text-gray-600">
+              This website is a personal project created to raise awareness about rainwater harvesting in Bangalore
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-8">
             <div className="space-y-6">
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <MapPin className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                    <GraduationCap className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-gray-800 mb-1">Office Address</h4>
-                      <p className="text-gray-600">
-                        123 Rain Harvest Lane<br />
-                        Koramangala, Bangalore - 560034<br />
-                        Karnataka, India
+                      <h4 className="font-semibold text-gray-800 mb-2">Student Initiative</h4>
+                      <p className="text-gray-600 mb-2">
+                        <strong>Nasir Azam</strong><br />
+                        Engineering Student<br />
+                        Nitte Meenakshi Institute of Technology<br />
+                        Bangalore, Karnataka
                       </p>
                     </div>
                   </div>
@@ -30,12 +37,16 @@ const ContactInfo = () => {
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <Phone className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                    <Mail className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-gray-800 mb-1">Phone Numbers</h4>
+                      <h4 className="font-semibold text-gray-800 mb-2">Email Contact</h4>
                       <p className="text-gray-600">
-                        +91 98765 43210 (General Queries)<br />
-                        +91 98765 43211 (Technical Support)
+                        <a href="mailto:nasirazam044@gmail.com" className="text-blue-600 hover:text-blue-800 transition-colors">
+                          nasirazam044@gmail.com
+                        </a>
+                      </p>
+                      <p className="text-sm text-gray-500 mt-1">
+                        Feel free to reach out for collaboration, questions, or discussions about rainwater harvesting
                       </p>
                     </div>
                   </div>
@@ -45,13 +56,15 @@ const ContactInfo = () => {
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <Mail className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
+                    <MessageCircle className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-gray-800 mb-1">Email</h4>
-                      <p className="text-gray-600">
-                        info@rainharvest.blr<br />
-                        support@rainharvest.blr
-                      </p>
+                      <h4 className="font-semibold text-gray-800 mb-2">Project Goals</h4>
+                      <ul className="text-gray-600 space-y-1 text-sm">
+                        <li>• Raise awareness about water conservation</li>
+                        <li>• Educate about rainwater harvesting benefits</li>
+                        <li>• Connect like-minded individuals</li>
+                        <li>• Promote sustainable practices in Bangalore</li>
+                      </ul>
                     </div>
                   </div>
                 </CardContent>
@@ -62,32 +75,55 @@ const ContactInfo = () => {
                   <div className="flex items-start gap-4">
                     <Clock className="w-6 h-6 text-orange-600 flex-shrink-0 mt-1" />
                     <div>
-                      <h4 className="font-semibold text-gray-800 mb-1">Office Hours</h4>
-                      <p className="text-gray-600">
-                        Monday - Friday: 9:00 AM - 6:00 PM<br />
-                        Saturday: 10:00 AM - 4:00 PM<br />
-                        Sunday: Closed
+                      <h4 className="font-semibold text-gray-800 mb-2">Response Time</h4>
+                      <p className="text-gray-600 text-sm">
+                        I typically respond to emails within 24-48 hours.<br />
+                        Please be patient as I balance this initiative with my studies.
                       </p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
             </div>
-          </div>
 
-          <div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">Find Us</h3>
-            <Card className="h-96">
-              <CardContent className="p-0 h-full">
-                <div className="w-full h-full bg-gradient-to-br from-blue-100 to-green-100 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-16 h-16 text-blue-600 mx-auto mb-4" />
-                    <h4 className="text-lg font-semibold text-gray-700 mb-2">Interactive Map</h4>
-                    <p className="text-gray-600">Google Maps integration coming soon</p>
+            <div>
+              <h3 className="text-xl font-bold text-gray-800 mb-6">Why This Matters</h3>
+              <Card className="h-full">
+                <CardContent className="p-6">
+                  <div className="space-y-4 text-gray-600">
+                    <p>
+                      As an engineering student in Bangalore, I've witnessed firsthand the water challenges our city faces. 
+                      This website is my contribution to raising awareness about rainwater harvesting as a sustainable solution.
+                    </p>
+                    <p>
+                      Every year, Bangalore receives adequate rainfall, but most of it goes to waste due to lack of proper 
+                      harvesting systems. Through this initiative, I hope to:
+                    </p>
+                    <ul className="space-y-2 ml-4">
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-600">•</span>
+                        <span>Educate citizens about simple rainwater harvesting techniques</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-600">•</span>
+                        <span>Show the economic and environmental benefits</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-purple-600">•</span>
+                        <span>Build a community of water-conscious individuals</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-orange-600">•</span>
+                        <span>Inspire action for a water-secure Bangalore</span>
+                      </li>
+                    </ul>
+                    <p className="pt-4 border-t border-gray-200 text-sm">
+                      <strong>Join me in this mission!</strong> Together, we can make Bangalore a model city for water conservation.
+                    </p>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </div>

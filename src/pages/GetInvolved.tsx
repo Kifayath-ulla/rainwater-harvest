@@ -1,7 +1,6 @@
 
 import Navbar from '@/components/Navbar';
 import VolunteerForm from '@/components/VolunteerForm';
-import NGOPartners from '@/components/NGOPartners';
 import Footer from '@/components/Footer';
 
 const GetInvolved = () => {
@@ -10,7 +9,6 @@ const GetInvolved = () => {
       <Navbar />
       <div className="pt-20">
         <VolunteerForm />
-        <NGOPartners />
       </div>
       <Footer />
     </div>

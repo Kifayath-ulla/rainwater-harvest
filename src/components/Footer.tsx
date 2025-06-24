@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Droplets, Mail, Github, Linkedin } from 'lucide-react';
+import { Droplets, Mail, Github, Linkedin, GraduationCap } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -12,13 +12,17 @@ const Footer = () => {
               <Droplets className="w-8 h-8 text-blue-400" />
               <span className="text-xl font-bold">RainHarvest BLR</span>
             </div>
-            <p className="text-gray-400 leading-relaxed">
-              Every Drop Counts – Let's Reclaim Our Rain. Building a water-secure future for Bangalore.
+            <p className="text-gray-400 leading-relaxed mb-4">
+              Every Drop Counts – Let's Reclaim Our Rain. A student initiative for building a water-secure future for Bangalore.
             </p>
+            <div className="flex items-center gap-2 text-sm text-gray-400">
+              <GraduationCap className="w-4 h-4" />
+              <span>Student Initiative Project</span>
+            </div>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4">Explore</h4>
             <ul className="space-y-2 text-gray-400">
               <li><a href="/how-it-works" className="hover:text-blue-400 transition-colors">How It Works</a></li>
               <li><a href="/calculator" className="hover:text-blue-400 transition-colors">Calculator</a></li>
@@ -28,11 +32,11 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
+            <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <div className="space-y-2 text-gray-400">
               <p>📍 Bangalore, Karnataka</p>
-              <p>📧 info@rainharvest-blr.org</p>
-              <p>📱 +91 98765 43210</p>
+              <p>📧 <a href="mailto:nasirazam044@gmail.com" className="hover:text-blue-400 transition-colors">nasirazam044@gmail.com</a></p>
+              <p>🎓 NMIT Engineering Student</p>
             </div>
           </div>
         </div>
@@ -44,10 +48,10 @@ const Footer = () => {
                 Built with ❤️ for a sustainable Bangalore
               </p>
               <p className="text-sm text-gray-500">
-                Designed & Developed by <span className="text-blue-400 font-semibold">Nasir Azam</span>
+                Created by <span className="text-blue-400 font-semibold">Nasir Azam</span> - Engineering Student
               </p>
               <p className="text-sm text-gray-500">
-                Contact: <a href="mailto:nasirazam044@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors">nasirazam044@gmail.com</a>
+                Nitte Meenakshi Institute of Technology | <a href="mailto:nasirazam044@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors">nasirazam044@gmail.com</a>
               </p>
             </div>
             
