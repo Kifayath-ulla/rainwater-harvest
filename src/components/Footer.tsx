@@ -35,8 +35,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <div className="space-y-2 text-gray-400">
               <p>📍 Bangalore, Karnataka</p>
-              <p>📧 <a href="mailto:nasirazam044@gmail.com" className="hover:text-blue-400 transition-colors">nasirazam044@gmail.com</a></p>
-              <p>🎓 NMIT Engineering Student</p>
+              <p>📧 <a href="mailto:kifayathulla5884@gmail.com" className="hover:text-blue-400 transition-colors">kifayathulla5884@gmail.com</a></p>
             </div>
           </div>
         </div>
@@ -48,15 +47,12 @@ const Footer = () => {
                 Built with ❤️ for a sustainable Bangalore
               </p>
               <p className="text-sm text-gray-500">
-                Created by <span className="text-blue-400 font-semibold">Nasir Azam</span> - Engineering Student
-              </p>
-              <p className="text-sm text-gray-500">
-                Nitte Meenakshi Institute of Technology | <a href="mailto:nasirazam044@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors">nasirazam044@gmail.com</a>
+                Created by <span className="text-blue-400 font-semibold">Kifayath ULla</span> - Engineering Student
               </p>
             </div>
             
             <div className="flex space-x-4">
-              <a href="mailto:nasirazam044@gmail.com" className="text-gray-400 hover:text-blue-400 transition-colors">
+              <a href="mailto:kifayathulla5884@gmail.com" className="text-gray-400 hover:text-blue-400 transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
               <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
